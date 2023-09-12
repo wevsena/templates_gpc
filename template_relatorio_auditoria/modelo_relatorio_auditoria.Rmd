@@ -1,0 +1,100 @@
+---
+tab_dados: yes
+instituicao: "Tribunal de Contas"
+departamento: "Nome do departamento"
+divisao: "Nome da divisão"
+assunto: "Assunto do relatório"
+responsavel: "Nome do responsável"
+jurisdicionado: "Nome do jurisdicionado"
+subcategoria: "Acompanhamento"
+exercicio: "2023"
+num_processo: "Número do processo"
+relator: "Nome do relator"
+mes_ano: " "
+lot: true
+lof: true
+fontsize: 11pt
+header-includes: 
+  \usepackage[brazilian]{babel}
+  \setlength{\headheight}{14.60pt}
+  \usepackage{indentfirst}
+  \usepackage{fancyhdr}
+  \usepackage{setspace}
+  \renewcommand{\baselinestretch}{1.5}
+  \usepackage{booktabs}
+  \usepackage{longtable}
+  \usepackage{array}
+  \usepackage{multirow}
+  \usepackage{wrapfig}
+  \usepackage{float}
+  \usepackage{colortbl}
+  \usepackage{pdflscape}
+  \usepackage{tabu}
+  \usepackage{threeparttable}
+  \usepackage{threeparttablex}
+  \usepackage[normalem]{ulem}
+  \usepackage[normalem]{ulem}
+  \usepackage[utf8]{inputenc}
+  \usepackage{makecell}
+  \usepackage{xcolor}
+  \usepackage[alf]{abntex2cite}
+  \usepackage{inputenc}
+  \usepackage{float}
+  \usepackage{pdflscape}
+  \usepackage{mwe}
+  \usepackage{afterpage}
+  \newcommand{\blandscape}{\begin{landscape}} 
+  \newcommand{\elandscape}{\end{landscape}}
+  \usepackage[sfdefault]{roboto}
+  \usepackage[T1]{fontenc}
+  \usepackage{changepage} 
+  \providecommand{\tightlist}{\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}} 
+
+urlcolor: black
+always_allow_html: yes
+linkcolor: blue
+citecolor: black
+output:
+  pdf_document:
+    toc: yes
+    extra_dependencies: ["float"]
+    latex_engine: pdflatex
+    number_sections: yes
+    template: template_tex_auditoria.tex
+    fig_caption: true
+    keep_tex: no
+    toc_depth: 4
+  html_document:
+    toc: yes
+    df_print: paged
+papersize: a4paper
+documentclass: article
+---
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+options(knitr.table.format = "latex")
+options(knitr.kable.NA = "-")
+
+formata_num <- function(x){format(x,  decimal.mark = ",", big.mark = ".")}
+formata_data <- function(x){format(x, "%d/%m/%Y")}
+```
+
+
+
+# Item 1
+
+
+
+
+# Item 2
+
+
+
+
+
+
+
+
+

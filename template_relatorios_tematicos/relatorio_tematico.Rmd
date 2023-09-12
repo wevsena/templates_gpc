@@ -1,0 +1,78 @@
+---
+instituicao: 'Tribunal de Contas do Estado da Paraíba'
+departamento: 'Grupo de Planejamento e Controle - GPC'
+provisorio: false
+lot: yes
+lof: yes
+assunto: 'Nome da Auditoria'
+subassunto: ''
+numerorel: 'Nome do relatório nº NN/AAAA'
+mes_ano: "Nome do mês de 2023"
+relator: ''
+fontsize: 11pt
+header-includes:
+  \usepackage[brazilian]{babel}
+  \setlength{\headheight}{14.60pt}
+  \usepackage{indentfirst}
+  \usepackage{fancyhdr}
+  \usepackage{setspace}
+  \usepackage{booktabs}
+  \usepackage{longtable}
+  \usepackage{array}
+  \usepackage{multirow}
+  \usepackage{wrapfig}
+  \usepackage{float}
+  \usepackage{colortbl}
+  \usepackage{tabu}
+  \usepackage{threeparttable}
+  \usepackage{threeparttablex}
+  \usepackage[normalem]{ulem}
+  \usepackage[normalem]{ulem}
+  \usepackage[utf8]{inputenc}
+  \usepackage{makecell}
+  \usepackage{xcolor}
+  \usepackage[alf]{abntex2cite}
+  \usepackage{inputenc}
+  \usepackage{float}
+  \usepackage{pdflscape}
+  \newcommand{\blandscape}{\begin{landscape}}
+  \newcommand{\elandscape}{\end{landscape}}
+  
+urlcolor: black
+always_allow_html: true
+linkcolor: blue
+citecolor: blue
+output:
+  pdf_document: 
+    toc: yes
+    number_sections: yes
+    template: template_tematica.tex
+    keep_tex: no
+    toc_depth: 4
+  html_document:
+    toc: yes
+    df_print: paged
+papersize: a4paper
+documentclass: article
+---
+
+
+```{r setup, include=FALSE}
+library(knitr)
+library(kableExtra)
+
+options(knitr.table.format = "latex", knitr.kable.NA = "-")
+formata_num <- function(x){format(x,  decimal.mark = ",", big.mark = ".")}
+formata_num_int <- function(x){format(x,  decimal.mark = ",", big.mark = ".", nsmall = 0, digits = 0)}
+formata_data <- function(x){format(x, "%d/%m/%Y")}
+```
+
+
+# Item 1
+
+
+# Item 2
+
+
+
+
